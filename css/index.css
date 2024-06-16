@@ -1,0 +1,326 @@
+@import url(font.css);
+@import url(reset.css);
+
+body{
+	font-size: 1.6rem;
+  font-family: "Noto Sans", sans-serif; 
+  padding: 7rem 0 0 0;
+}
+
+
+/* ----------->> header <<----------- */
+header{
+  width: 100%;
+  height: 7rem;
+	top:0;
+	left:0;
+  background-color: #fff;
+	position:fixed;
+	z-index:1000; 
+  border-bottom: .1rem solid #D9D9D9;
+}
+header .header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1rem 3rem;
+}   
+header .header-container img{
+  width:10rem;
+  height: 3rem;
+  margin-top: 1rem;
+} 
+
+/* Trigger ///////////////*/
+.trigger {
+  width: 3.2rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 3rem;
+  cursor: pointer;
+  z-index: 100;
+}
+.trigger span{
+  position: absolute;
+  width: 100%;
+  height: .4rem;
+  background-color: #434343;
+	border-radius: 5rem;
+  transition: 0.3s;
+}
+.trigger span:nth-child(1){top: 0;}
+.trigger span:nth-child(2){top: 50%;}
+.trigger span:nth-child(3){top: 100%;}
+
+.trigger.active span:nth-child(1){top: 50%;transform: rotate(45deg);}
+.trigger.active span:nth-child(2){opacity: 0;}
+.trigger.active span:nth-child(3){top: 50%;transform: rotate(-45deg);}
+
+/* Menu ///////////////*/
+.gnb_list{
+  display: none;	
+	position:absolute;
+  top: 7rem;
+	width:100%;
+	background:#fff;
+  z-index: 20000;
+  border-bottom: .2rem solid #FFE279;
+}
+.gnb_list li a{
+  font-family: SeoulNamsanEB, sans-serif;
+	display:block; 
+	font-size:2rem; 
+	text-align:center;
+  padding: 2.8rem 0;
+}
+.gnb_list li a:hover{color: #01A667;}
+.gnb_list .login{
+  padding: 3rem 0;
+}
+.gnb_list .login ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+.login ul li{
+  background-color:#01A667; 
+  width: 9rem;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height:2.5rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.login ul li:hover{background-color: #FFE279;}
+section{  padding: 3rem;}
+section h3{
+  font-family: SeoulNamsanB, sans-serif;
+  font-size: 2rem;
+}
+
+/* Section0 Main */
+#section0 {
+  width: 100%;
+  height: 37rem;
+  background: url(../img/main.png)no-repeat top /cover;
+}
+#section0 .main p{
+  font-size: 1.4rem;
+}
+#section0 .mainlogo img{
+  width: 14.9rem;
+  margin-top: 15.3rem;
+}
+#section0 .main h2{
+  margin-top: 1.7rem;
+  font-size: 2.6rem;
+  font-family: SeoulNamsanB, sans-serif;
+}
+
+/* Section1 */
+#section1{
+  width: 100%;
+  height: 38rem;
+  background-color: #131111;
+}
+#section1 h3{color: #fff;}
+#section1 .box{
+  margin: 3rem auto;
+  width: 100%;
+  height: 19.5rem;
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+}
+#section1 .box h4{
+  font-size: 1.6rem;
+  font-size: 700;
+}
+.box p{
+  margin-top: 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+#section1 .btn{
+  text-align: center;
+  width: 100%;
+  height: 3.2rem;
+  position: relative;
+}
+#section1 a{
+  width: 9rem;
+  height: 3.2rem;
+  font-size: 1.6rem;
+  background-color: #01A667;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s;
+}
+#section1 .btn:hover a{
+  background-color: #FFE279;
+}
+
+/* Section2 */
+#section2{
+  width: 100%;
+  height: 45rem;
+  padding: 0;
+  position: relative;
+}
+#section2 h3{padding: 3rem;}
+#section2 .black{
+  width: 100%;
+  height: 24rem;
+  background-color: #131111;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+/* swiper */
+.swiper {
+	width: 100%;
+	height: 20rem;
+  margin-top: 3rem;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 14rem;
+  height: 20rem;
+}
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* ------------- */
+#section2 .btn{
+  text-align: center;
+  width: 100%;
+  height: 3.2rem;
+  position: relative;
+  margin-top: 5.2rem;
+}
+#section2 a{
+  width: 9rem;
+  height: 3.2rem;
+  font-size: 1.6rem;
+  background-color: #01A667;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s;
+}
+#section2 .btn:hover a{
+  background-color: #FFE279;
+}
+
+/* Section3 */
+#section3{
+  width: 100%;
+  height: 45rem;
+  padding: 0;
+  position: relative;
+}
+#section3 h3{padding: 3rem;}
+#section3 .black{
+  width: 100%;
+  height: 24rem;
+  background-color: #131111;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+#section3 .btn{
+  text-align: center;
+  width: 100%;
+  height: 3.2rem;
+  position: relative;
+  margin-top: 5.2rem;
+}
+#section3 a{
+  width: 9rem;
+  height: 3.2rem;
+  font-size: 1.6rem;
+  background-color: #01A667;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s;
+}
+#section3 .btn:hover a{
+  background-color: #FFE279;
+}
+/* banner */
+#banner{
+  padding: 0;
+  width: 100%;
+  height:14.2rem;
+  background: url(../img/banner.webp) no-repeat center center;
+  position: relative;
+  background-size: cover;
+}
+
+/* Section4 */
+#section4{
+  width: 100%;
+  height: 24.3rem;
+}
+#section4 .sponsor{text-align: center;}
+#section4 .sponsor li{padding-top: 4rem;}
+#section4 .sponsor li:first-child{padding-top: 0;}
+
+/* footer */
+footer{
+  background-color: #01A667;
+  width: 100%;
+  height: 20rem;
+  padding: 3rem;
+}
+footer .sns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .sns .sns-in{
+  display: flex;
+  margin-top: 1.2rem;
+  column-gap: 2rem;
+}
+footer .ftext{
+  text-align: center;
+  font-style: normal;
+  color: #fff;
+  margin-top: 1.7rem;
+}
+footer address{
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+}
+footer b{
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 0.3rem;
+}
+footer p.copy{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.6rem;
+}
+
